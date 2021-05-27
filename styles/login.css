@@ -54,6 +54,7 @@ table {
 	/* 12 columns */
 	column-width: 8.33%;
 	
+	
   } 
 
   /*For mobile phones*/
@@ -86,10 +87,11 @@ table {
 
 #welcome_text {
     text-align: center; 
-    font-family: 'Roboto', sans-serif;
+    
     font-size: xx-large;
     margin-top: 2%;
 }
+
 
 input[type=password], input[type=text] {
 	width: 50%;
