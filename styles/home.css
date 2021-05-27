@@ -2,6 +2,27 @@
 
 .card {
     margin: 15px;
-    width: 18rem;
+    width: 19rem;
+    
+}
+
+.container {
+    margin-top: 5%;
+    
+}
+
+#comment_box {
+    align-items: center;
+    
+}
+input[name="title_input"] {
+    width: 40%;
+    
+    margin-right: 100px;
+    
+}
+
+textarea[name="body_input"]{
+    width: 40%;
     
 }
