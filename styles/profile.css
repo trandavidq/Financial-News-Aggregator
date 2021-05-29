@@ -1,0 +1,17 @@
+* {
+    
+}
+
+#country_preferences {
+    margin-top: 1%;
+    position: relative; 
+    left: 30px;
+    top: 20px;
+    
+    float: left;
+}
+
+#market_preferences {
+    
+    float: left;
+}
