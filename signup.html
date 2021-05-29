@@ -22,11 +22,14 @@
 			<div class="form-group">
 				<label for="username">Username:</label>
 				<input type="text" id="username" name="username" class="form-control" style="width: 500px;" placeholder="Enter username">
+				<small><div style="color: red;" id="username_warning"></div></small>
 			</div>
 			<br><br>
 			<div class="form-group">
 				<label for="password">Password:</label>
 				<input type="password" id="password" name="password" style="width: 500px;" class="form-control">
+				<small><div style="color: red;" id="password_warning"></div></small>
+				<input type="checkbox" id="toggle_password">Show Password
 			</div>
 			<br><br>
 			<div class="form-group">
@@ -42,6 +45,6 @@
 		  
 		  
 	</div>
-
+<script src="./js/signup.js"></script>
 </body>
 </html>

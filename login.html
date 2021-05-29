@@ -19,26 +19,30 @@
 
 	<div id="login_form">
 		<!--Change the action to a post request later-->
-		<form action="https://github.com">
+		<form action="">
 			<div class="form-group">
 				<label for="username">Username:</label>
 				<input type="text" id="username" name="username" class="form-control" style="width: 500px;" placeholder="Enter username">
+				<small><div style="color: red;" id="username_warning"></div></small>
 			</div>
 			<br><br>
 			<div class="form-group">
 				<label for="password">Password:</label>
 				<input type="password" id="password" name="password" style="width: 500px;" class="form-control">
+				<small><div style="color: red;" id="password_warning"></div></small>
+				<input type="checkbox" id="toggle_password">Show Password
 			</div>
 			<br><br>
-			<button type="submit" value="Login" class="btn btn-primary">Log in</button>
+			<button type="submit" value="Login" class="btn btn-primary" id="submit_btn">Log in</button>
 		  </form>
 
 		  
 		  <a href="signup.html">Haven't registered yet? Sign up here</a>
-		  
+		  <br><br>
+		  <a href="home.html">Click me!</a>
 		  
 	</div>
-
+<script src="./js/login.js"></script>
 </body>
 </html>
 
