@@ -3,7 +3,7 @@
 let username_form = document.getElementById("username");
 let password_form = document.getElementById("password");
 let toggle_password_checkbox = document.getElementById("toggle_password");
-
+username_form.focus();
 
 
 function checkUsername(){

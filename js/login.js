@@ -4,6 +4,12 @@ let username_form = document.getElementById("username");
 let password_form = document.getElementById("password");
 let toggle_password_checkbox = document.getElementById("toggle_password");
 
+username_form.autofocus = true;
+console.log('asd');
+
+
+
+
 
 
 function checkUsername(){
@@ -43,3 +49,10 @@ function togglePassword(){
 username_form.addEventListener('input', checkUsername);
 password_form.addEventListener('input', checkPassword);
 toggle_password_checkbox.addEventListener('click',togglePassword);
+/*
+submit_button.addEventListener('click',() => { 
+    //Change inner HTML
+    submit_button.innerHTML = "Logging in ... ";
+    console.log("Reasdf");
+});
+*/
