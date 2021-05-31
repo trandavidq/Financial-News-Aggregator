@@ -43,7 +43,7 @@
           <a href="login.html" class="nav-link">Logout</a>
         </li>
       </ul>
-      
+
     </div>
   </nav>
   <br><br>
@@ -142,8 +142,30 @@
       </div>
     </div>
   </div>
+  <br><br>
 
   <!--Comment box: User interactivity-->
+  <div id="comment-section">
+    <form action="">
+      <h2>Comment:</h2>
+      <div class="form-group">
+        <textarea id="comment_text" cols="50" rows="5" class="form-control" style="width: 30%;"></textarea>
+        <p id="comment_length_warning" style="color: red;"></p>
+        <button class="btn btn-primary" type="submit" value="Submit" id="post_comment_button"
+          style="margin-top: 15px;">Post comment</button>
+      </div>
+    </form>
+  </div>
+  <p id="post_comment_success" style="margin-top: 10px;"></p>
+  <div id="posted-comments"></div>
+
+
+
+
+
+
+  </form>
+  <br>
 
 
 
@@ -159,6 +181,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+    <script src="./js/home.js"></script>
 </body>
 
 </html>
