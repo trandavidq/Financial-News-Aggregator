@@ -56,7 +56,12 @@ toggle_password_checkbox.addEventListener('click',togglePassword);
 let submit_button = document.getElementById("submit_btn");
 submit_button.addEventListener('click',(event) => { 
     //Change inner HTML
-    if(!validInput(username_form.value) || !validInput(password_form.value) || (confirm_form.value!=password_form.value)){
+    if(confirm_form.value!=password_form.value){
+        document.getElementById("confirm_warning").innerHTML = "Passwords are not matching";
+        event.preventDefault();
+
+    }
+    if(!validInput(username_form.value) || !validInput(password_form.value)){
         event.preventDefault();
     }
 });

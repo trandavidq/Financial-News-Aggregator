@@ -44,6 +44,9 @@
 				<label for="confirm_password">Confirm password:</label>
 				<input type="password" id="confirm_password" name="confirm_password" style="width: 500px;"
 					class="form-control">
+				<small>
+				 	<div style="color: red;" id="confirm_warning"></div>
+				</small>
 			</div>
 			<br><br>
 			<button type="submit" value="Submit" class="btn btn-primary" id="submit_btn">Sign up</button>
@@ -55,7 +58,7 @@
 
 	</div>
 	<script src="./js/signup.js"></script>
-	<?php include './user_handling/register_users.php' ; ?>
+	
 	
 	
 </body>

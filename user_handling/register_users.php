@@ -1,6 +1,7 @@
 <?php
 require '../db.php';
 
+echo "Inlcude success!";
 
 if($_SERVER['REQUEST_METHOD']=='POST'){
     
