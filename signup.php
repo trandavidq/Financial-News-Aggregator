@@ -19,9 +19,9 @@
 	<h2 id="welcome_text">Signup here</h2>
 
 
-	<div id="login_form">
+	<div id="signup_form">
 		<!--Change the action to a post request later-->
-		<form action="login.html">
+		<form action="./user_handling/register_users.php" method = "post">
 			<div class="form-group">
 				<label for="username">Username:</label>
 				<input type="text" id="username" name="username" class="form-control" style="width: 500px;"
@@ -50,11 +50,14 @@
 		</form>
 
 
-		<a href="login.html" class="highlight">Already registered? Log in here</a>
+		<a href="login.php" class="highlight">Already registered? Log in here</a>
 
 
 	</div>
 	<script src="./js/signup.js"></script>
+	<?php include './user_handling/register_users.php' ; ?>
+	
+	
 </body>
 
 </html>

@@ -2,6 +2,7 @@
 
 let username_form = document.getElementById("username");
 let password_form = document.getElementById("password");
+let confirm_form = document.getElementById("confirm_password");
 let toggle_password_checkbox = document.getElementById("toggle_password");
 
 
@@ -55,7 +56,7 @@ toggle_password_checkbox.addEventListener('click',togglePassword);
 let submit_button = document.getElementById("submit_btn");
 submit_button.addEventListener('click',(event) => { 
     //Change inner HTML
-    if(!validInput(username_form.value) || !validInput(password_form.value)){
+    if(!validInput(username_form.value) || !validInput(password_form.value) || (confirm_form.value!=password_form.value)){
         event.preventDefault();
     }
 });
