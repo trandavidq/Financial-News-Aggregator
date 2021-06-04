@@ -2,6 +2,7 @@
 
 let username_form = document.getElementById("username");
 let password_form = document.getElementById("password");
+let confirm_form = document.getElementById("confirm_password");
 let toggle_password_checkbox = document.getElementById("toggle_password");
 
 
@@ -55,6 +56,11 @@ toggle_password_checkbox.addEventListener('click',togglePassword);
 let submit_button = document.getElementById("submit_btn");
 submit_button.addEventListener('click',(event) => { 
     //Change inner HTML
+    if(confirm_form.value!=password_form.value){
+        document.getElementById("confirm_warning").innerHTML = "Passwords are not matching";
+        event.preventDefault();
+
+    }
     if(!validInput(username_form.value) || !validInput(password_form.value)){
         event.preventDefault();
     }
