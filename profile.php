@@ -13,9 +13,10 @@
 </head>
 
 <body>
+<?php session_start(); ?>
     <!--Navbar-->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="profile.html">Profile (Replace with username)</a>
+        <a class="navbar-brand" href="profile.html"><?php echo $_SESSION['user'];?></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -44,7 +45,7 @@
     </nav>
     <br><br>
 
-    <h1 id="username">{username}</h1>
+    <h1 id="username"><?php echo $_SESSION['user'];?></h1>
     <!--Country preferences-->
     <div id="input_form">
         <form action="" id="market_preferences">

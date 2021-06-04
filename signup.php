@@ -21,7 +21,7 @@
 
 	<div id="signup_form">
 		<!--Change the action to a post request later-->
-		<form action="./user_handling/register_users.php" method = "post">
+		<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method = "post">
 			<div class="form-group">
 				<label for="username">Username:</label>
 				<input type="text" id="username" name="username" class="form-control" style="width: 500px;"
@@ -54,9 +54,14 @@
 
 
 		<a href="login.php" class="highlight">Already registered? Log in here</a>
+		<br><br>
+		
+		<?php include('./user_handling/register_users.php'); ?>
 
 
 	</div>
+	
+	
 	<script src="./js/signup.js"></script>
 	
 	

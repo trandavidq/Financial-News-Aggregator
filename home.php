@@ -16,9 +16,14 @@
 </head>
 
 <body style="background-color: #E7E1D7 ;">
+
+  <?php session_start(); ?>
+  
+  
+
   <!--Navbar-->
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="profile.html">Profile (Replace with username)</a>
+    <a class="navbar-brand" href="profile.php"><?php echo $_SESSION['user'];?></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -158,6 +163,8 @@
   </div>
   <p id="post_comment_success" style="margin-top: 10px;"></p>
   <div id="posted-comments"></div>
+
+  
 
 
 
