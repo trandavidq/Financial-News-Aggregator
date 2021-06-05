@@ -9,7 +9,7 @@ session_start();
 
 if($_SERVER['REQUEST_METHOD']=='POST'){
     $username = $_POST['username'];
-    $hashed_password = password_hash($_POST['password'],PASSWORD_BCRYPT);
+    
     // echo $username . "</br>";
     // echo $hashed_password . "</br>";
 

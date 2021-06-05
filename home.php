@@ -164,20 +164,8 @@
   <p id="post_comment_success" style="margin-top: 10px;"></p>
   <div id="posted-comments"></div>
 
-  
-
-
-
-
-
-
   </form>
   <br>
-
-
-
-
-
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -189,6 +177,15 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
     <script src="./js/home.js"></script>
+    <?php
+    if(isset($_SESSION['countries'])){
+      foreach($_SESSION['countries'] as $country){
+        echo $country . " selected </br>";
+      }
+    }
+    ?>
+    
+
 </body>
 
 </html>
