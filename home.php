@@ -20,152 +20,18 @@
   <?php session_start(); ?>
   
   
+  
+  
 
   <!--Navbar-->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="profile.php"><?php echo $_SESSION['user'];?></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="home.html">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Countries
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">United States</a>
-            <a class="dropdown-item" href="#">Japan</a>
-            <a class="dropdown-item" href="#">China</a>
-          </div>
-        </li>
-        <li class="nav-item active">
-          <a href="login.html" class="nav-link">Logout</a>
-        </li>
-      </ul>
-
-    </div>
-  </nav>
-  <br><br>
+  
+  <?php
+  include('home_header.php');
+  ?>
+  
 
   <!--Cards. This is hardcoded for now, will convert to dynamic later down the line once we learn it-->
-  <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Sample title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Sample title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Sample title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--New row-->
-    <div class="row">
-      <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Sample title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Sample title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Sample title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--New row-->
-    <div class="row">
-      <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Sample title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Sample title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Sample title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br><br>
-
-  <!--Comment box: User interactivity-->
-  <div id="comment-section">
-    <form action="">
-      <h2>Comment:</h2>
-      <div class="form-group">
-        <textarea id="comment_text" cols="50" rows="5" class="form-control" style="width: 30%;"></textarea>
-        <p id="comment_length_warning" style="color: red;"></p>
-        <button class="btn btn-primary" type="submit" value="Submit" id="post_comment_button"
-          style="margin-top: 15px;">Post comment</button>
-      </div>
-    </form>
-  </div>
-  <p id="post_comment_success" style="margin-top: 10px;"></p>
-  <div id="posted-comments"></div>
-
-  </form>
-  <br>
+  
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -177,13 +43,21 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
     <script src="./js/home.js"></script>
+
+
     <?php
-    if(isset($_SESSION['countries'])){
-      foreach($_SESSION['countries'] as $country){
-        echo $country . " selected </br>";
-      }
+    //Idea: Read in the country from the GET, if there is no country, die();
+    $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    $current_country = $_GET['country'];
+    
+    if(!isset($current_country)){
+      die('No country in URL!');
     }
-    ?>
+    foreach($_SESSION['markets'] as $market_sector){
+      include('news_api.php');
+    }
+    
+  ?>
     
 
 </body>

@@ -64,7 +64,7 @@ session_start();
                     <label class="form-check-label" for="flexCheckDefault">Japan</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="United States" id="flexCheckDefault" name="country_list[]">
+                    <input class="form-check-input" type="checkbox" value="US" id="flexCheckDefault" name="country_list[]">
                     <label class="form-check-label" for="flexCheckDefault">United States</label>
                 </div>
                 <div class="form-check">
@@ -80,12 +80,12 @@ session_start();
                     <label class="form-check-label" for="flexCheckDefault">France</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="South Korea" id="flexCheckDefault" name="country_list[]">
+                    <input class="form-check-input" type="checkbox" value="Korea" id="flexCheckDefault" name="country_list[]">
                     <label class="form-check-label" for="flexCheckDefault">South Korea</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="Hong Kong" id="flexCheckDefault" name="country_list[]">
-                    <label class="form-check-label" for="flexCheckDefault">Hong Kong</label>
+                    <input class="form-check-input" type="checkbox" value="Malaysia" id="flexCheckDefault" name="country_list[]">
+                    <label class="form-check-label" for="flexCheckDefault">Africa</label>
                 </div>
             </div>
             <br><br>
