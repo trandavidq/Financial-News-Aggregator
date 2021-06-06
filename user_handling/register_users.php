@@ -10,9 +10,9 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     $username = $_POST['username'];
     
     $hashed_password = password_hash($_POST['password'],PASSWORD_BCRYPT);
-    echo $username . "</br>";
-    echo $_POST['password'] . "</br>";
-    echo $hashed_password . "</br>";
+    // echo $username . "</br>";
+    // echo $_POST['password'] . "</br>";
+    // echo $hashed_password . "</br>";
 
     //Check if username exists, if it does, do not signup user, since there cannot be duplicates
 

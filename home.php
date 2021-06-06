@@ -18,21 +18,11 @@
 <body style="background-color: #E7E1D7 ;">
 
   <?php session_start(); ?>
-  
-  
-  
-  
-
   <!--Navbar-->
-  
   <?php
   include('home_header.php');
   ?>
-  
-
   <!--Cards. This is hardcoded for now, will convert to dynamic later down the line once we learn it-->
-  
-
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -44,22 +34,19 @@
     crossorigin="anonymous"></script>
     <script src="./js/home.js"></script>
 
-
     <?php
     //Idea: Read in the country from the GET, if there is no country, die();
     $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
     $current_country = $_GET['country'];
     
     if(!isset($current_country)){
-      die('No country in URL!');
+      die();
     }
     foreach($_SESSION['markets'] as $market_sector){
       include('news_api.php');
     }
     
   ?>
-    
-
 </body>
 
 </html>
