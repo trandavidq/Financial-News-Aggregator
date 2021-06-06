@@ -6,11 +6,7 @@ error_reporting(E_ALL);
 
 $query = str_replace(' ','%20',($current_country . "%20" . $market_sector));
 
-
-
 $json_res  = json_decode(file_get_contents("https://newsapi.org/v2/everything?q=$query&sortBy=popularity&apiKey=2514fcdc3dab403d89bb1a501cc97737"),true);
-
-
 
 $first_three_articles = array($json_res['articles'][0],$json_res['articles'][1],$json_res['articles'][2]);
 
@@ -63,7 +59,4 @@ echo <<<EOT
     </div>
     </div>
     EOT;
-
-
-
 ?>

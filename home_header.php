@@ -1,16 +1,14 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
+
 $username = $_SESSION['user'];
 
 $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 $base_url = explode("http://localhost/CS4640_project/home.php",$url)[0];
 
-
-
 $dropdown_countries = '';
-
 
 foreach($_SESSION['countries'] as $country){
     
@@ -39,7 +37,7 @@ echo <<<EOT
           </div>
         </li>
         <li class="nav-item active">
-          <a href="login.html" class="nav-link">Logout</a>
+          <a href="logout.php" class="nav-link">Logout</a>
         </li>
       </ul>
 
