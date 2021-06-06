@@ -23,7 +23,7 @@
 
 	<div id="login_form">
 		<!-- Change the action to a post request later -->
-		<form action="<?php echo $_SERVER["PHP_SELF"]; ?>">
+		<form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post">
 			<div class="form-group">
 				<label for="username">Username:</label>
 				<input type="text" id="username" name="username" class="form-control" style="width: 500px;"
@@ -45,14 +45,20 @@
 			<button type="submit" value="Login" class="btn btn-primary" id="submit_btn">Log in</button>
 		</form>
 
+		
+		
+
 
 		<a href="signup.php" class="highlight">Haven't registered yet? Sign up here</a>
 		<br><br>
+		<script src="./js/login.js"></script>
+		<?php include('./user_handling/user_authentication.php'); ?>
+		
 	</div>
 
 	
 	
-	<script src="./js/login.js"></script>
+	
 </body>
 
 </html>

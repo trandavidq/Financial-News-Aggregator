@@ -13,6 +13,6 @@ if(mysqli_connect_errno()){
     echo "Failed to connect to DB- David Tran";
 }
 else{
-    echo "Connected to DB!" . "</br>";
+    //echo "Connected to DB!" . "</br>";
 }
 ?>
